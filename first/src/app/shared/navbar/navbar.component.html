@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <a class="navbar-brand" href="#">Logo</a>
+        </ul>
+    </div>
+    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <a class="nav-link" href="#">Category</a>
+    <div ngbDropdown class="d-inline-block mr-3">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Sign up</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem routerLink="/signup-lawyer">Lawyer</button>
+            <button ngbDropdownItem routerLink="/signup-client">Client</button>
+            <button ngbDropdownItem>Admin</button>
+        </div>
+    </div>
+    <button class="nav-item nav-link btn btn-outline-primary ">Sign in</button>
+</nav>
